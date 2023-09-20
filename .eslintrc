@@ -1,0 +1,26 @@
+{
+  "extends": [ "next/core-web-vitals","eslint-config-prettier", "plugin:@typescript-eslint/recommended", "prettier"],
+  "plugins": [
+    "eslint-plugin-prettier",
+    "@typescript-eslint",
+    "import"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    //"@typescript-eslint/no-unused-vars": ["warn"],
+    "import/order": ["error"],
+    "prettier/prettier": ["error"],
+    "no-console": "error",
+    //"@typescript-eslint/no-namespace": "warn",
+    "@typescript-eslint/prefer-interface": "off",
+    "no-restricted-imports": ["error", "lodash/get"],
+    "jsx-quotes": ["error", "prefer-double"],
+    "prefer-template": "error",
+    "import/imports-first": "error",
+    "object-shorthand": ["error", "always"],
+    "no-use-before-define": ["off", {"functions": false, "classes": false, "variables": false}],
+    "no-nested-ternary": "warn",
+    "no-else-return": ["error", {"allowElseIf": true}],
+    "@typescript-eslint/ban-types": "off"
+  }
+}
